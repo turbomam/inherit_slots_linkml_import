@@ -1,0 +1,34 @@
+id: https://example.com/a
+name: a
+title: schema a
+description: >-
+  a imports b and c
+
+prefixes:
+  a: https://example.com/a/
+  linkml: https://w3id.org/linkml/
+  
+default_prefix: a
+default_range: string
+
+# default_curi_maps:
+#   - obo_context
+#   - idot_context
+
+imports:
+  - linkml:types
+  - b
+  - c
+
+classes:
+
+  classa:
+    description: "sole class in schema a"
+    slots:
+      - slota
+      
+slots:
+
+  slota:
+    description: "sole slot in schema a"
+

@@ -1,0 +1,34 @@
+id: https://example.com/c
+name: c
+title: schema c
+description: >-
+  a imports c
+
+prefixes:
+  a: https://example.com/a/
+  
+default_prefix: a
+default_range: string
+
+# default_curi_maps:
+#   - obo_context
+#   - idot_context
+
+classes:
+
+  classc:
+    description: "sole class in schema c"
+    slots:
+      - slotc
+
+  classb:
+    slots:
+      - slotx
+      
+slots:
+
+  slotc:
+    description: "sole slot in schema c"
+  slotx:
+    description: "slot added from file c onto file b's classb"
+
